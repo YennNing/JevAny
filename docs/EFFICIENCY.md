@@ -6,7 +6,7 @@ A100-SXM4-40GB GPUs. How to enable each option is described in
 [Optional CUDA acceleration](DEPLOYMENT.md#optional-cuda-acceleration); the
 numbers are also in [`results/efficiency-a100-v1.json`](../results/efficiency-a100-v1.json).
 
-[![Accuracy vs median latency before and after acceleration](efficiency-latency.png)](efficiency-latency.png)
+[![Accuracy vs median latency before and after acceleration](efficiency-latency.svg)](efficiency-latency.svg)
 
 ## Summary
 

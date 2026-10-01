@@ -302,7 +302,9 @@ latency of the 4B releases about fourfold. Transfer accuracy moves by at most
 three questions. The 27B and 30B releases run layer-sharded over 40 GB GPUs
 with `--device-map auto` and gain 8–10%.
 
-[![Accuracy vs median latency before and after acceleration for JevAny and other decision models](docs/efficiency-latency.png)](docs/EFFICIENCY.md)
+[![Accuracy vs median latency before and after acceleration for JevAny and other decision models](docs/efficiency-latency.svg)](docs/EFFICIENCY.md)
+
+[![Median latency of each JevAny release before and after acceleration](docs/efficiency-ablation.svg)](docs/EFFICIENCY.md)
 
 <div align="center">
 

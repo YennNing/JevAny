@@ -1,4 +1,4 @@
-"""Draw docs/efficiency-latency.png from results/efficiency-a100-v1.json."""
+"""Draw docs/efficiency-latency.svg from results/efficiency-a100-v1.json."""
 
 from pathlib import Path
 import json
@@ -12,7 +12,7 @@ from matplotlib.ticker import FixedLocator, NullLocator, PercentFormatter
 
 ROOT = Path(__file__).resolve().parents[1]
 SOURCE = ROOT / "results" / "efficiency-a100-v1.json"
-OUT = ROOT / "docs" / "efficiency-latency.png"
+OUT = ROOT / "docs" / "efficiency-latency.svg"
 
 INK, MUTED, GRID, BG = "#111111", "#555555", "#E6E6E6", "#FCFCFB"
 OURS, OURS_ARROW, OURS_HALO = "#2A73D9", "#8DB6EE", "#CFE2FB"
@@ -211,7 +211,7 @@ def main() -> None:
              "EFFICIENCY.md.",
              fontsize=8.6, color=MUTED, linespacing=1.55)
 
-    fig.savefig(OUT, dpi=200, metadata={"Software": None})
+    fig.savefig(OUT, format="svg", metadata={"Date": None})
     print(f"wrote {OUT.relative_to(ROOT)}")
 
 

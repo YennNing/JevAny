@@ -281,7 +281,9 @@ NLL、Brier 和 ECE 均在 Transfer 上计算。
 Transfer 准确率最多变化 3 题。27B 和 30B 版本用 `--device-map auto` 按层切分到多张 40 GB GPU 上，
 提速 8–10%。
 
-[![加速前后 JevAny 与其他决策模型的准确率-延迟对比](docs/efficiency-latency.png)](docs/EFFICIENCY.md)
+[![加速前后 JevAny 与其他决策模型的准确率-延迟对比](docs/efficiency-latency.svg)](docs/EFFICIENCY.md)
+
+[![加速前后各 JevAny 版本的中位延迟](docs/efficiency-ablation.svg)](docs/EFFICIENCY.md)
 
 <div align="center">
 
